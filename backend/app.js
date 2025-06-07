@@ -20,6 +20,8 @@ app.use(
   })
 );
 
+app.options("*", cors());
+
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
