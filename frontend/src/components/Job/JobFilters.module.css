@@ -1,0 +1,81 @@
+/* JobFilters.module.css */
+
+.filters {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 320px;
+  min-width: 260px;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #22223b;
+  transition: box-shadow 0.2s;
+  margin-right: 2rem;
+}
+
+.filters h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+  color: #4f46e5;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.filter-section {
+  margin-bottom: 2.2rem;
+}
+
+.filter-section p {
+  font-weight: 600;
+  margin-bottom: 1.1rem;
+  color: #22223b;
+  font-size: 1.09rem;
+  letter-spacing: 0.2px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.04rem;
+  font-weight: 400;
+}
+
+.label:hover,
+.label:focus-within {
+  background: #f4f6ff;
+  color: #4f46e5;
+}
+
+.label input[type="radio"] {
+  accent-color: #4f46e5;
+  width: 1.1em;
+  height: 1.1em;
+  margin: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.label input[type="radio"]:focus {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .filters {
+    width: 100%;
+    min-width: unset;
+    padding: 1.2rem 1rem;
+    margin-right: 0;
+  }
+  .label {
+    font-size: 0.97rem;
+    padding: 0.2rem 0.4rem;
+  }
+}

@@ -1,0 +1,185 @@
+.myJobs {
+  background: #f7fafd;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #22223b;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(56,182,255,0.10);
+  padding: 2rem 2rem 1.2rem 2rem;
+  min-width: 340px;
+  flex: 1 1 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(56,182,255,0.18);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.short_fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.short_fields > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.short_fields span {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #38b6ff;
+  margin-bottom: 0.3rem;
+}
+
+.short_fields input,
+.short_fields select {
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafd;
+  transition: border 0.2s;
+  outline: none;
+}
+.short_fields input:focus,
+.short_fields select:focus {
+  border: 1.5px solid #38b6ff;
+}
+
+.long_field {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.long_field > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.long_field span {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: #38b6ff;
+  margin-bottom: 0.3rem;
+}
+.long_field textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafd;
+  resize: vertical;
+  min-height: 70px;
+  transition: border 0.2s;
+  outline: none;
+}
+.long_field textarea:focus {
+  border: 1.5px solid #38b6ff;
+}
+
+.button_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.edit_btn_wrapper {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.edit_btn, .check_btn, .cross_btn, .delete_btn {
+  padding: 0.45rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit_btn {
+  background: #38b6ff;
+  color: #fff;
+}
+.edit_btn:hover {
+  background: #1e90ff;
+}
+
+.check_btn {
+  background: #43e97b;
+  color: #fff;
+}
+.check_btn:hover {
+  background: #2ec36a;
+}
+
+.cross_btn {
+  background: #b0b0b0;
+  color: #fff;
+}
+.cross_btn:hover {
+  background: #888;
+}
+
+.delete_btn {
+  background: #ff1744;
+  color: #fff;
+}
+.delete_btn:hover {
+  background: #c3001b;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .card {
+    min-width: unset;
+    width: 100%;
+  }
+  .long_field {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
